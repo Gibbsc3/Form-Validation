@@ -10,8 +10,7 @@ function validate(form) {
         return false;
     } else {
       //checks is email field has an @ sign
-      //need to add regex for pattern
-        if (email.includes('@') === false) {
+        if (email.includes('@') === false && email.includes('.') === false ) {
             return false;
         } else {
           //checks if phone field has 10 digits
